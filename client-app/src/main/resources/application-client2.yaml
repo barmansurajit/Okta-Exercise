@@ -1,0 +1,21 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: oauth-client-app-2
+  security:
+    oauth2:
+      client:
+        provider:
+          okta:
+            issuer-uri: {}
+        registration:
+          okta:
+            clientId: {}
+            clientSecret: {}
+            authorizationGrantType: authorization_code
+            scope:
+              - openid
+              - profile
+              - email
